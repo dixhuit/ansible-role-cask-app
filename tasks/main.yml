@@ -1,0 +1,7 @@
+---
+
+- name: Install {{ cask_app_name }} to {{ homebrew_cask_appdir }}
+  homebrew_cask: name={{ cask_app_name }} state=present
+  environment:
+    HOMEBREW_CASK_OPTS: --appdir={{ homebrew_cask_appdir }}
+  notify: brew cask cleanup

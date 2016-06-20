@@ -1,0 +1,24 @@
+# 'allow_duplicates' is required to allow this role to be run as a dependency
+# more than once in the same play.
+allow_duplicates: yes
+
+dependencies:
+  - danbohea.homebrew
+
+galaxy_info:
+  author: danbohea
+  description: DRY Homebrew cask app installation on Mac OS X.
+  license: MIT
+  min_ansible_version: 2.0
+  # In the absence of a 'Mac OS' platform option:
+  platforms:
+  - name: GenericUNIX
+    versions:
+    - all
+    - any
+  galaxy_tags:
+    - cask
+    - homebrew
+    - mac
+    - macsible
+    - osx
