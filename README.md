@@ -7,7 +7,7 @@ A re-usable Ansible role for installing apps via Homebrew Cask providing an easy
 
 ## Requirements
 
-- macOS 10.9+
+- macOS 10.10+
 
 
 ## Role Variables
