@@ -20,5 +20,6 @@ galaxy_info:
     - cask
     - homebrew
     - mac
+    - macos
     - macsible
     - osx
