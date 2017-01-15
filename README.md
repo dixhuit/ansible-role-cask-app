@@ -2,12 +2,12 @@
 
 [![Build Status](https://travis-ci.org/danbohea/ansible-role-cask-app.svg?branch=master)](https://travis-ci.org/danbohea/ansible-role-cask-app)
 
-A re-usable Ansible role for installing apps via Homebrew Cask providing an easy way to associate Ansible tags with app installations (see example playbook below). The role can be used as a dependency any number of times within a playbook.
+A re-usable Ansible role for installing macOS apps via Homebrew Cask providing an easy way to associate Ansible tags with app installations (see example playbook below). The role can be used as a dependency any number of times within a playbook.
 
 
 ## Requirements
 
-- macOS 10.10+
+- macOS 10.10, 10.11 or 10.12
 
 
 ## Role Variables
@@ -46,4 +46,4 @@ MIT
 
 ## Author Information
 
-This role was created by [Dan Bohea](http://bohea.co.uk) primarily for use with [Macsible](https://github.com/danbohea/macsible).
+This role was created by [Dan Bohea](http://bohea.co.uk) primarily for use with [Macsible](https://github.com/macsible/macsible).
