@@ -14,7 +14,7 @@ A re-usable Ansible role for installing macOS apps via Homebrew Cask providing a
 
 All role default variables are listed below along with their respective default values.
 
-```
+```yaml
 cask_app_name: "caffeine"
 ```
 
@@ -27,7 +27,7 @@ The name of the app you wish to install as it would be specified for Homebrew Ca
 
 ## Example Playbook
 
-```
+```yaml
 - hosts: macbook
   connection: local
 
