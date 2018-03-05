@@ -3,6 +3,13 @@
   remote_user: root
   roles:
     # Simple example.
-    - { cask_app_name: "firefox", role: ansible-role-cask-app }
+    - {
+      cask_app_name: "atext",
+      role: ansible-role-cask-app
+      }
     # Example using `cask_app_options`.
-    - { cask_app_name: "virtualbox", cask_app_options: force, role: ansible-role-cask-app }
+    - { 
+      cask_app_name: "muzzle",
+      cask_app_options: force,
+      role: ansible-role-cask-app
+      }
