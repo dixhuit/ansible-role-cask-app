@@ -16,8 +16,9 @@ matrix:
 install:
   # TODO: Only use brew python on macOS 10.12.
   # Upgrade python to avoid SSL errors when using ansible-galaxy to get roles from GitHub (macOS 10.12).
-  - brew update
-  - brew upgrade python
+  # - brew update
+  # - brew upgrade python
+  - ./tests/upgrade_python.sh
   # Install pip
   - sudo easy_install pip
   # Install Ansible
