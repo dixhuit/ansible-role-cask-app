@@ -14,10 +14,7 @@ matrix:
     - osx_image: xcode7.3
 
 install:
-  # TODO: Only use brew python on macOS 10.12.
-  # Upgrade python to avoid SSL errors when using ansible-galaxy to get roles from GitHub (macOS 10.12).
-  # - brew update
-  # - brew upgrade python
+  # Upgrade python via brew if needed (based on macOS version)
   - ./tests/upgrade_python.sh
   # Install pip
   - sudo easy_install pip
@@ -30,7 +27,7 @@ install:
   - ansible --version
   # Create ansible.cfg with correct roles_path
   - printf '[defaults]\nroles_path=../' >ansible.cfg
-  # Install required dependencies.
+  # Install required dependencies
   - ansible-galaxy install danbohea.homebrew
 
 script:
