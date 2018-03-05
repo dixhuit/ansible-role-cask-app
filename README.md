@@ -2,7 +2,11 @@
 
 [![Build Status](https://travis-ci.org/danbohea/ansible-role-cask-app.svg?branch=master)](https://travis-ci.org/danbohea/ansible-role-cask-app)
 
-A re-usable Ansible role for installing macOS apps via Homebrew Cask providing an easy way to associate Ansible tags with app installations (see example playbook below). The role can be used as a dependency any number of times within a playbook.
+An Ansible role for installing Homebrew Cask apps on macOS.
+
+- Run the role any number of times in your playbook, passing in different data each time.
+- Install one cask app per Ansible task
+- Associate Ansible tags with each cask app installation task.
 
 
 ## Requirements
