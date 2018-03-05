@@ -22,14 +22,13 @@ matrix:
   fast_finish: true
 
 install:
-  # Debug info
-  - python --version
   # Install pip
   - sudo easy_install pip
   # Install Ansible
   - sudo pip install ansible --quiet
   # Debug info
   - python --version
+  - python -c "import ssl; print(ssl.OPENSSL_VERSION)"
   - pip --version
   - ansible --version
   # Create ansible.cfg with correct roles_path
