@@ -4,12 +4,12 @@
   roles:
     # Simple example.
     - {
-      cask_app_name: "atext",
+      cask_app_name: atext,
       role: ansible-role-cask-app
       }
-    # Example using `cask_app_options`.
+    # Example using cask_app_options.
     - { 
-      cask_app_name: "muzzle",
+      cask_app_name: muzzle,
       cask_app_options: force,
       role: ansible-role-cask-app
       }
