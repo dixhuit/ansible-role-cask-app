@@ -2,5 +2,5 @@
 
 - name: Install {{ cask_app_name }}
   homebrew_cask: name={{ cask_app_name }} state=present
-  install_options: "{{ install_options }}"
+  install_options: "{{ cask_app_options }}"
   notify: brew cask cleanup
