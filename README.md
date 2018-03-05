@@ -5,7 +5,7 @@
 An Ansible role for installing Homebrew Cask apps on macOS.
 
 - Run the role any number of times in your playbook, passing in different data each time.
-- Install one cask app per Ansible task
+- Install one cask app per Ansible task.
 - Associate Ansible tags with each cask app installation task.
 
 
@@ -41,12 +41,23 @@ cask_app_install_options: ""
   connection: local
 
   roles:
-    # Simple example.
-    - { cask_app_name: "firefox", role: ansible-role-cask-app }
-    # Example using tags
-    - { cask_app_name: "firefox", tags: ["firefox"], role: ansible-role-cask-app }
-    # Example using `cask_app_options`.
-    - { cask_app_name: "virtualbox", cask_app_install_options: "force", role: ansible-role-cask-app }
+    # Minimal example.
+    - {
+      cask_app_name: firefox,
+      role: ansible-role-cask-app
+      }
+    # Example using tags.
+    - {
+      cask_app_name: firefox,
+      tags: ["firefox", "another_tag"],
+      role: ansible-role-cask-app
+      }
+    # Example using cask_app_options.
+    - { 
+      cask_app_name: firefox,
+      cask_app_options: force,
+      role: ansible-role-cask-app
+      }
 ```
 
 
