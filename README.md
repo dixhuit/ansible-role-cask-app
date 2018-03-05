@@ -18,7 +18,7 @@ A re-usable Ansible role for installing macOS apps via Homebrew Cask providing a
 cask_app_name: ""
 
 # Any installation options that need to be passed to Homebrew Cask.
-cask_app_options: ""
+cask_app_install_options: ""
 ```
 
 ## Dependencies
@@ -38,7 +38,7 @@ cask_app_options: ""
     # Example using tags
     - { cask_app_name: "firefox", tags: ["firefox"], role: ansible-role-cask-app }
     # Example using `cask_app_options`.
-    - { cask_app_name: "virtualbox", cask_app_options: "force", role: ansible-role-cask-app }
+    - { cask_app_name: "virtualbox", cask_app_install_options: "force", role: ansible-role-cask-app }
 ```
 
 

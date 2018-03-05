@@ -4,4 +4,4 @@
 cask_app_name: ""
 
 # Any installation options that need to be passed to Homebrew Cask.
-cask_app_options: ""
+cask_app_install_options: ""
