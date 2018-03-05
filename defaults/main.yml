@@ -1,3 +1,7 @@
 ---
 
-cask_app_name: "caffeine"
+# The name of the app you wish to install as it would be specified for Homebrew Cask.
+cask_app_name: ""
+
+# Any installation options that need to be passed to Homebrew Cask.
+cask_app_options: ""

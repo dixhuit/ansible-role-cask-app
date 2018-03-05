@@ -7,18 +7,18 @@ A re-usable Ansible role for installing macOS apps via Homebrew Cask providing a
 
 ## Requirements
 
-- macOS 10.11 or 10.12
+- macOS 10.13, 10.12 or 10.11.
 
 
 ## Role Variables
 
-All role default variables are listed below along with their respective default values.
-
 ```yaml
-cask_app_name: "caffeine"
-```
+# The name of the app you wish to install as it would be specified for Homebrew Cask.
+cask_app_name: ""
 
-The name of the app you wish to install as it would be specified for Homebrew Cask. The default value here is for demonstration purposes only and is entirely intended to be overridden.
+# Any installation options that need to be passed to Homebrew Cask.
+cask_app_options: ""
+```
 
 ## Dependencies
 
@@ -32,10 +32,12 @@ The name of the app you wish to install as it would be specified for Homebrew Ca
   connection: local
 
   roles:
-    # Basic example
-    - { cask_app_name: "alfred", role: cask_app }
-    # Example with added tags
-    - { cask_app_name: "alfred", tags: ["alfred","another_tag"], role: cask_app }
+    # Simple example.
+    - { cask_app_name: "firefox", role: ansible-role-cask-app }
+    # Example using tags
+    - { cask_app_name: "firefox", tags: ["firefox"], role: ansible-role-cask-app }
+    # Example using `cask_app_options`.
+    - { cask_app_name: "virtualbox", cask_app_options: "force", role: ansible-role-cask-app }
 ```
 
 
