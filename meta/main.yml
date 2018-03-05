@@ -15,7 +15,8 @@ galaxy_info:
     versions:
     - '10.11'
     - '10.12'
-    # TODO: Apparently this is an "invalid platform" FFS. 
+    # TODO: Apparently this is an "invalid platform". FFS.
+    # https://github.com/ansible/galaxy/issues/352
     # - '10.13'
   galaxy_tags:
     - cask
