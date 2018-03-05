@@ -12,16 +12,10 @@ matrix:
     - osx_image: xcode8.3
     # macOS 10.11
     - osx_image: xcode7.3
-    # macOS 10.10
-    - osx_image: xcode6.4
-  allow_failures:
-    # macOS 10.12
-    - osx_image: xcode8.3
-    # macOS 10.10
-    - osx_image: xcode6.4
-  fast_finish: true
 
 install:
+  # TODO: Only use brew python on macOS 10.12.
+  # Upgrade python to avoid SSL errors when using ansible-galaxy to get roles from GitHub (macOS 10.12).
   - brew update
   - brew upgrade python
   # Install pip
