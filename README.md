@@ -37,8 +37,7 @@ cask_app_install_options: ""
 ## Example Playbook
 
 ```yaml
-- hosts: macbook
-  connection: local
+- hosts: all
 
   roles:
     # Minimal example.
