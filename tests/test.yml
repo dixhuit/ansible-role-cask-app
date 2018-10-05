@@ -7,7 +7,7 @@
       cask_app_name: malwarebytes,
       role: ansible-role-cask-app
       }
-    # Example using cask_app_options.
+    # Example using cask_app_install_options.
     - { 
       cask_app_name: licecap,
       cask_app_install_options: force,
