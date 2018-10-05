@@ -4,7 +4,7 @@
   roles:
     # Simple example.
     - {
-      cask_app_name: atext,
+      cask_app_name: malwarebytes,
       role: ansible-role-cask-app
       }
     # Example using cask_app_options.
