@@ -8,13 +8,12 @@ An Ansible role for installing Homebrew Cask apps on macOS.
 - Install one cask app per Ansible task.
 - Associate Ansible tags with each cask app installation task.
 
-
 ## Requirements
 
 - Ansible >= 2.2.
 - macOS:
   - 10.13
-  - 10.12\*
+  - 10.12
   - 10.11
 
 _* Requires more up to date python than is shipped with macOS._ 
@@ -32,7 +31,6 @@ cask_app_install_options: ""
 ## Dependencies
 
 - [danbohea.homebrew](https://galaxy.ansible.com/danbohea/homebrew)
-
 
 ## Example Playbook
 
@@ -59,11 +57,9 @@ cask_app_install_options: ""
       }
 ```
 
-
 ## License
 
 MIT
-
 
 ## Author Information
 
