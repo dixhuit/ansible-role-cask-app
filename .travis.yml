@@ -35,11 +35,11 @@ script:
   - ansible-playbook tests/test.yml -i tests/inventory --syntax-check
 
   # Run test playbook
-  - ansible-playbook tests/test.yml -i tests/inventory --connection=local -vvv
+  - ansible-playbook tests/test.yml -i tests/inventory --connection=local
 
   # Idempotence test (run test playbook again & check output)
   - >
-    ansible-playbook tests/test.yml -i tests/inventory --connection=local -vvv
+    ansible-playbook tests/test.yml -i tests/inventory --connection=local
     | grep -q 'changed=0.*failed=0'
     && (echo 'Idempotence test: pass' && exit 0)
     || (echo 'Idempotence test: fail' && exit 1)
