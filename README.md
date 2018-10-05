@@ -10,11 +10,8 @@ An Ansible role for installing Homebrew Cask apps on macOS.
 
 ## Requirements
 
+- macOS 10.13
 - Ansible >= 2.2.
-- macOS:
-  - 10.13
-  - 10.12
-  - 10.11
 
 _* Requires more up to date python than is shipped with macOS._ 
 
