@@ -4,4 +4,4 @@
   homebrew_cask: 
     name: "{{ cask_app_name }}"
     install_options: "{{ cask_app_install_options }}"
-  notify: brew cask cleanup
+  notify: brew cleanup
