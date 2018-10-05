@@ -10,6 +10,6 @@
     # Example using cask_app_options.
     - { 
       cask_app_name: muzzle,
-      cask_app_options: force,
+      cask_app_install_options: force,
       role: ansible-role-cask-app
       }

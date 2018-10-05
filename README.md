@@ -49,10 +49,10 @@ cask_app_install_options: ""
       tags: ["firefox", "another_tag"],
       role: ansible-role-cask-app
       }
-    # Example using cask_app_options.
+    # Example using cask_app_install_options.
     - { 
       cask_app_name: firefox,
-      cask_app_options: force,
+      cask_app_install_options: force,
       role: ansible-role-cask-app
       }
 ```
